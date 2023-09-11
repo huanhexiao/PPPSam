@@ -1,0 +1,51 @@
+
+#************************************************************************************#
+#---------------- time settings ----------------#
+## Please try to set the time as presice as possible!
+
+# TimeStart: [year,month,day,hour,minute,second]
+TimeStart: [2016, 6, 27, 0, 0, 0]
+# TimeEnd: [year,month,day,hour,minute,second]
+TimeEnd: [2016, 6, 27, 5, 59, 30]
+# Interval (s)
+Interval: 1.0
+
+#************************************************************************************#
+# Data1
+Infile-obsfile    : "ous21790.16o"
+vNavTrue          : [-4387891.0127,733420.8468,-4555176.0931]
+# # Data2
+# Infile-obsfile    : "nrmg1790.16o"
+# vNavTrue          : [-5743538.0368,1380503.9250,-2397896.1617]
+# # Data3
+# Infile-obsfile    : "wind1790.16o"
+# vNavTrue          : [5633708.7960,1732017.9588,-2433985.5706]
+
+#----------------- input files -----------------#
+# InputFilesDirectoty: "/home/huanhexiao/Dataset/GNSS/RTKLib/"
+InFilepath        : "/home/huanhexiao/Dataset/GNSS/RTKLib/Static/GPS_GLONASS_GALILEO/1903/1790/"
+Infile-navfile    : "brdm1790.16p"
+Infile-dcbfile    : "CAS0MGXRAP_20161790000_01D_01D_DCB.BSX"
+Infile-ionofile   : "CODG1790.16I"
+Infile-eopfile    : "gbm19031.erp"
+Infile-orbitfile  : "gbm19031.sp3"
+Infile-clkfile    : "gbm19031.clk"
+Infile-blqfile    : /home/huanhexiao/Dataset/GNSS/RTKLib/Tables/FES2004_2.blq
+Infile-geoidfile  : 
+Infile-geexefile  : 
+#----------------- output files -----------------#
+OutFilepath       : "/home/huanhexiao/WORK/VIG/VIG_GTSrc410/zPPP/Results/Static/1903/1790/"
+Outfile-file_id   : _PPP
+Outfile-ambpath   : 
+Outfile-respath   : 
+Outfile-azlpath   : 
+
+#************************************************************************************#
+#---------------- Noise Setup ---------------#
+vInitPosNoise     : [300.0, 300.0, 300.0]
+InitClkNoise      : 300.0
+InitAmNoise       : 100.0
+InitTrpNoise      : # calculated inside
+BetwPosNoise      : 1.0e-6
+BetwTrpNoise      : 3.0e-6
+PhNoiseFactor     : 5.0
